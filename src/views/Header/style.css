@@ -1,3 +1,33 @@
 .app-header {
-  background: blue;
+  position: relative;
+  width: 100vw;
+  height: max-content;
+  min-height: 80vh;
+}
+
+.app-header .title {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: max-content;
+  font-size: 9em;
+  font-family: "helvetica";
+  font-weight: 600;
+  color: white;
+  line-height: 1em;
+  padding: 50px;
+  text-transform: lowercase;
+  text-shadow: -6px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.app-header .logo {
+  position: absolute;
+  width: 33%;
+  height: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }

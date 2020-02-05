@@ -1,3 +1,8 @@
 .app-menu {
-  background: yellow;
+  z-index: 2;
+  position: fixed;
+  width: 100vw;
+  height: 50px;
+  background: #FFF;
+  opacity: 0.5;
 }

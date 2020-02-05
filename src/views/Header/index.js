@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+import fancyCssGradient from '../Tools/fancyCssGradient'
 import './style.css'
 
 
@@ -11,8 +12,18 @@ class Header extends React.Component {
 
   render(){
     return (
-      <div className="app-header">
-        this is the header component
+      <div
+        className="app-header"
+        style={{
+          background: fancyCssGradient()
+        }}
+      >
+        <div className="title">
+        the<br/>
+        map<br/>
+        crafter
+
+        </div>
       </div>
     )
   }
