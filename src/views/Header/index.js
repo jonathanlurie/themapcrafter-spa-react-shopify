@@ -1,5 +1,5 @@
 import React from 'react'
-import fancyCssGradient from '../Tools/fancyCssGradient'
+import Storage from '../../core/Storage'
 import './style.css'
 
 
@@ -14,16 +14,33 @@ class Header extends React.Component {
     return (
       <div
         className="app-header"
-        style={{
-          background: fancyCssGradient()
-        }}
       >
-        <div className="title">
+        <div
+          className="top-line"
+          style={{
+            background: Storage.gradient
+          }}
+        />
+
+        <div
+          className="title"
+          style={{
+            background: Storage.gradient
+          }}
+        >
         the<br/>
         map<br/>
         crafter
 
         </div>
+
+        <div
+          className="separator"
+          style={{
+            background: Storage.gradient
+          }}
+        />
+
       </div>
     )
   }

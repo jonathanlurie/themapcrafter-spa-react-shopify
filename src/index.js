@@ -4,18 +4,17 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import shopifyCollectionWrapper from './core/ShopifyCollectionWrapper'
+import Storage from './core/Storage'
+import fancyCssGradient from './views/Tools/fancyCssGradient'
 
 
 // console.log('process.env.', process.env)
 
 async function init(){
-
+  Storage.gradient = fancyCssGradient()
   await shopifyCollectionWrapper.fetchCollections()
 
-  console.log(shopifyCollectionWrapper)
-
-  console.log('hello from index');
-  ReactDOM.render(<App />, document.getElementById('root'));
+  ReactDOM.render(<App />, document.getElementById('root'))
 }
 
 init()

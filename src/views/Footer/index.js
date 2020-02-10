@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+import Storage from '../../core/Storage'
 import './style.css'
 
 
@@ -11,7 +12,12 @@ class Footer extends React.Component {
 
   render(){
     return (
-      <div className="app-footer">
+      <div
+        className="app-footer"
+        style={{
+          background: Storage.gradient
+        }}
+      >
         this is the footer component
       </div>
     )

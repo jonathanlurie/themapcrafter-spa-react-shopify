@@ -18,7 +18,11 @@ class Collection extends React.Component {
 
     return (
       <div className="app-collection">
-        {collection.title}
+
+        <div className="collection-title">
+          {collection.title}
+        </div>
+
 
         <div className="product-display">
           {products}

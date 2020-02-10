@@ -1,3 +1,20 @@
 .app-collection {
-  background: red;
+  margin-bottom: 80px;
+}
+
+.app-collection .collection-title {
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-style: italic;
+  letter-spacing: 0.2em;
+  color: #adadad;
+  margin-bottom: 50px;
+}
+
+
+.app-collection .product-display {
+  display: flex;
+  justify-content: space-evenly;
 }

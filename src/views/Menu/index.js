@@ -10,11 +10,12 @@ class Menu extends React.Component {
 
 
   render(){
-    return (
-      <div className="app-menu">
-        this is the product component
-      </div>
-    )
+    // return (
+    //   <div className="app-menu">
+    //     this is the product component
+    //   </div>
+    // )
+    return null
   }
 
 }
