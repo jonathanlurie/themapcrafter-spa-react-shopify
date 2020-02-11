@@ -1,5 +1,5 @@
 .app-collection {
-  margin-bottom: 50px;
+
 }
 
 .app-collection .collection-title {
@@ -17,6 +17,7 @@
 .app-collection .product-display {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 
