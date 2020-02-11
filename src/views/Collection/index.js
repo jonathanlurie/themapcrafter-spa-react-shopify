@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+import Storage from '../../core/Storage'
 import Product from '../Product'
 import './style.css'
 
@@ -19,6 +20,13 @@ class Collection extends React.Component {
     return (
       <div className="app-collection">
 
+        <div
+          className="gradient-dash"
+          style={{
+            background: Storage.gradient
+          }}
+        />
+
         <div className="collection-title">
           {collection.title}
         </div>
@@ -27,6 +35,8 @@ class Collection extends React.Component {
         <div className="product-display">
           {products}
         </div>
+
+
 
       </div>
     )

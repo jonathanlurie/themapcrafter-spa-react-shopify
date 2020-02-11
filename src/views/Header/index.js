@@ -15,12 +15,6 @@ class Header extends React.Component {
       <div
         className="app-header"
       >
-        <div
-          className="top-line"
-          style={{
-            background: Storage.gradient
-          }}
-        />
 
         <div
           className="title"
@@ -34,12 +28,7 @@ class Header extends React.Component {
 
         </div>
 
-        <div
-          className="separator"
-          style={{
-            background: Storage.gradient
-          }}
-        />
+
 
       </div>
     )
