@@ -16,7 +16,7 @@ class Product extends React.Component {
     ShopifyUi.createComponent('product', {
       id: atob(this.props.product.id).split('/').pop(),
       node: this.mountingDiv,
-      options: Storage.shopifyDisplayOptions
+      options: Storage.shopifyDisplayOptions 
     })
   }
 

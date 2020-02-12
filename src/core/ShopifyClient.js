@@ -1,5 +1,8 @@
 import ShopifyBuy from '@shopify/buy-button-js'
+import ComponentDefault from '@shopify/buy-button-js/src/defaults/components.js'
 import Storage from './Storage'
+
+console.log("ComponentDefault", ComponentDefault)
 
 const ShopifyClient = ShopifyBuy.buildClient({
   domain: process.env.REACT_APP_SHOPIFY_DOMAIN,
@@ -9,6 +12,8 @@ const ShopifyClient = ShopifyBuy.buildClient({
 const ShopifyUi = ShopifyBuy.UI.init(ShopifyClient)
 
 
+// check all the default values at:
+// https://github.com/Shopify/buy-button-js/blob/master/src/defaults/components.js
 Storage.shopifyDisplayOptions = {
 
   "toggle": {
@@ -44,24 +49,16 @@ Storage.shopifyDisplayOptions = {
   },
 
 
-
-
+  modalProduct: {
+    width: '1500px',
+    contents: {
+      imgWithCarousel: true,
+      img: false
+    }
+  },
 
   product: {
-    // iframe: false,
     buttonDestination: 'modal', // opens a modal with full description
-
-    // the order of things
-    // order : [
-    //   'title',
-    //   'variantTitle',
-    //   'img',
-    //   'price',
-    //   'options',
-    //   'description',
-    //   'quantity',
-    //   'button',
-    // ],
 
     // the display or hiding of things
     contents: {
@@ -95,8 +92,6 @@ Storage.shopifyDisplayOptions = {
         }
       }
     },
-
-
   },
 }
 

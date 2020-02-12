@@ -18,7 +18,7 @@ class Footer extends React.Component {
           background: Storage.gradient
         }}
       >
-        this is the footer component
+        this is the footer component....
       </div>
     )
   }
