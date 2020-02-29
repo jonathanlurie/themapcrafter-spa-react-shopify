@@ -1,4 +1,5 @@
 import React from 'react'
+import SocialBar from '../SocialBar'
 import Storage from '../../core/Storage'
 import './style.css'
 
@@ -15,7 +16,6 @@ class Header extends React.Component {
       <div
         className="app-header"
       >
-
         <div
           className="title"
           style={{
@@ -25,11 +25,16 @@ class Header extends React.Component {
         the<br/>
         map<br/>
         crafter
-
         </div>
-
-
-
+        <SocialBar
+          style={{
+            padding: '10px',
+            left: 0,
+            right: 0,
+            margin: 'auto'
+          }}
+          opacity={0.2}
+        />
       </div>
     )
   }

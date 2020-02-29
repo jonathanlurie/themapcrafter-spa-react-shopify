@@ -1,0 +1,23 @@
+.social-bar {
+  width: fit-content;
+}
+
+.social-bar .social-link {
+  width: 25px;
+  height: 25px;
+}
+
+.social-bar .social-icon {
+  width: inherit;
+  height: inherit;
+  /* opacity: 0.5; */
+  transition: all 0.2s;
+}
+
+.social-bar .social-icon:hover {
+  opacity: 1;
+}
+
+.social-link + .social-link {
+  margin-left: 5px;
+}

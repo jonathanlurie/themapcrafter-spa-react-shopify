@@ -7,6 +7,8 @@ TODO
 # Configuration, env vars and SEO
 TODO
 
+Note: web scawling bots like clear emails in webpage, obfuscate yours with [something like that before](http://www.wbwip.com/wbw/emailencoder.html).
+
 # TODO
 - this doc
 - clean static assets from CRA (images, favicon, etc.)
@@ -14,4 +16,3 @@ TODO
 - Add Collection description if any
 - Add more fields in env vars (shop name, seo stuff)
 - Add more product
-- Configure the modal to view all the images
